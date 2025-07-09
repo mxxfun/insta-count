@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateStatusText(isEnabled) {
         if (isEnabled) {
-            statusText.textContent = 'Erweiterung ist aktiviert';
+            statusText.textContent = 'Extension is active';
         } else {
-            statusText.textContent = 'Erweiterung ist deaktiviert';
+            statusText.textContent = 'Extension is disabled';
         }
     }
 }); 
