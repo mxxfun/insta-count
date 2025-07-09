@@ -1,4 +1,4 @@
-# InstaCount Pro 🚀
+# InstaCount 🚀
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg) ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
 
