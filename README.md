@@ -1,4 +1,12 @@
 # InstaCount 🚀
+<p align="center">
+  <img src="icon-128.png" alt="InstaCount Logo" width="128" height="128">
+</p>
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/aohnabmmndfipaaphlimibbkdpgkpbcm?utm_source=item-share-cb" target="_blank">
+    <img src="https://img.shields.io/badge/Install%20from%20Chrome%20Web%20Store-blue?logo=google-chrome&logoColor=white&style=for-the-badge" alt="Install from Chrome Web Store"/>
+  </a>
+</p>
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg) ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
 
