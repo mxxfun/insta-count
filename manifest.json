@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Insta Count",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Shows the complete follower count on Instagram",
   "permissions": [
     "storage"
