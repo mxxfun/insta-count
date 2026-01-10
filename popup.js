@@ -2,18 +2,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleSwitch = document.getElementById('toggleSwitch');
     const statusText = document.getElementById('statusText');
 
-    // Initialen Status aus chrome.storage laden und Schalter setzen
+    // Load initial state from chrome.storage
     chrome.storage.sync.get({ 'extensionEnabled': true }, function (data) {
         toggleSwitch.checked = data.extensionEnabled;
         updateStatusText(data.extensionEnabled);
     });
 
-    // Event Listener für den Schalter
+    // Event listener for toggle switch
     toggleSwitch.addEventListener('change', function () {
         const isEnabled = this.checked;
         chrome.storage.sync.set({ 'extensionEnabled': isEnabled }, function () {
             updateStatusText(isEnabled);
-            // Aktiven Tab benachrichtigen oder neu laden, um die Änderungen zu übernehmen
+            // Notify active tab or reload to apply changes
             chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
                 if (tabs[0] && tabs[0].url.includes('instagram.com')) {
                     chrome.tabs.reload(tabs[0].id);
@@ -25,8 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateStatusText(isEnabled) {
         if (isEnabled) {
             statusText.textContent = 'Extension is active';
+            statusText.classList.add('active');
         } else {
             statusText.textContent = 'Extension is disabled';
+            statusText.classList.remove('active');
         }
     }
-}); 
+});
