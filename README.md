@@ -8,7 +8,7 @@
   </a>
 </p>
 
-![Version](https://img.shields.io/badge/version-1.0.1-blue.svg) ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+![Version](https://img.shields.io/badge/version-1.2.0-blue.svg) ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
 
 **Displays the exact follower counts on Instagram, bypassing the rounded numbers (e.g., 10K, 1.5M). With InstaCount Pro, you always see the precise number!**
 
